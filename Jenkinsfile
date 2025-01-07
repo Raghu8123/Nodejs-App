@@ -11,11 +11,19 @@ pipeline {
             steps {
                 sh 'echo "Testing..."'
             }
+	  
         }
         stage('Deploy') {
             steps {
                 sh 'echo "Deploying..."'
             }
         }
+
+        stage('Archive') {
+            steps {
+                sh 'echo "Archiving..."'
+            }
+        }
+
     }
 }
